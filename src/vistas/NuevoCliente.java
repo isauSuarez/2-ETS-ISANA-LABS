@@ -26,22 +26,161 @@ public class NuevoCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        JLBRegistrarTecnico = new javax.swing.JLabel();
+        JLBApellido = new javax.swing.JLabel();
+        JLBATelefono = new javax.swing.JLabel();
+        JLBCorreo = new javax.swing.JLabel();
+        JLBNombre = new javax.swing.JLabel();
+        JTFNombreCliente = new javax.swing.JTextField();
+        JTFApellidoCliente = new javax.swing.JTextField();
+        JTFTelefonoCliente = new javax.swing.JTextField();
+        JTFCorreoCliente = new javax.swing.JTextField();
+        JBNGuardarCliente = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(400, 500));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+
+        JLBRegistrarTecnico.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
+        JLBRegistrarTecnico.setText("Registrar cliente:");
+
+        JLBApellido.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBApellido.setText("Apellido (s)");
+
+        JLBATelefono.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBATelefono.setText("Telefono");
+
+        JLBCorreo.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBCorreo.setText("Correo");
+
+        JLBNombre.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBNombre.setText("Nombre (s)");
+
+        JTFNombreCliente.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
+        JTFNombreCliente.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFNombreCliente.setText("Nombre (s)");
+        JTFNombreCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        JTFApellidoCliente.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
+        JTFApellidoCliente.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFApellidoCliente.setText("Apellido (s)");
+        JTFApellidoCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        JTFTelefonoCliente.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
+        JTFTelefonoCliente.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFTelefonoCliente.setText("Telefono");
+        JTFTelefonoCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        JTFCorreoCliente.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
+        JTFCorreoCliente.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFCorreoCliente.setText("Correo");
+        JTFCorreoCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        JBNGuardarCliente.setBackground(new java.awt.Color(0, 165, 104));
+        JBNGuardarCliente.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNGuardarCliente.setText("Guardar");
+        JBNGuardarCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        JBNGuardarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNGuardarClienteActionPerformed(evt);
+            }
+        });
+
+        jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        jButton1.setText("Cancelar");
+        jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JLBCorreo)
+                        .addGap(27, 27, 27))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JLBNombre)
+                        .addGap(1, 1, 1))
+                    .addComponent(JLBATelefono, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JLBApellido, javax.swing.GroupLayout.Alignment.LEADING))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JTFNombreCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(JTFCorreoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JTFTelefonoCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JTFApellidoCliente, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(128, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(JLBRegistrarTecnico)
+                        .addGap(112, 112, 112))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(JBNGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(131, 131, 131))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(JLBRegistrarTecnico)
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JLBNombre)
+                        .addGap(18, 18, 18)
+                        .addComponent(JLBApellido)
+                        .addGap(18, 18, 18)
+                        .addComponent(JLBATelefono)
+                        .addGap(18, 18, 18)
+                        .addComponent(JLBCorreo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JTFNombreCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(JTFApellidoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(JTFTelefonoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(JTFCorreoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(43, 43, 43)
+                .addComponent(JBNGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17)))
+                .addContainerGap())
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JBNGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNGuardarClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNGuardarClienteActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +218,17 @@ public class NuevoCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBNGuardarCliente;
+    private javax.swing.JLabel JLBATelefono;
+    private javax.swing.JLabel JLBApellido;
+    private javax.swing.JLabel JLBCorreo;
+    private javax.swing.JLabel JLBNombre;
+    private javax.swing.JLabel JLBRegistrarTecnico;
+    private javax.swing.JTextField JTFApellidoCliente;
+    private javax.swing.JTextField JTFCorreoCliente;
+    private javax.swing.JTextField JTFNombreCliente;
+    private javax.swing.JTextField JTFTelefonoCliente;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
