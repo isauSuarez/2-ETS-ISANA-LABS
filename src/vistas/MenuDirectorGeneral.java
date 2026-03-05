@@ -34,9 +34,13 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
         JLBLogo = new javax.swing.JLabel();
         JMBDirectorGeneral = new javax.swing.JMenuBar();
         JMNDGReportes = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        JMIReportePolizas = new javax.swing.JMenuItem();
+        JMIReporteCliente = new javax.swing.JMenuItem();
+        JMIReporteTickets = new javax.swing.JMenuItem();
+        JMIReporteTecnico = new javax.swing.JMenuItem();
         JMNDGPersonal = new javax.swing.JMenu();
+        JMINuevoTecnico = new javax.swing.JMenuItem();
+        JMIEditarTecnico = new javax.swing.JMenuItem();
         JMNDGCerrarSesion = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,15 +61,38 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
 
         JMNDGReportes.setText("Reportes");
 
-        jMenuItem1.setText("jMenuItem1");
-        JMNDGReportes.add(jMenuItem1);
+        JMIReportePolizas.setText("Reporte de polizas");
+        JMIReportePolizas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMIReportePolizasActionPerformed(evt);
+            }
+        });
+        JMNDGReportes.add(JMIReportePolizas);
 
-        jMenuItem2.setText("jMenuItem2");
-        JMNDGReportes.add(jMenuItem2);
+        JMIReporteCliente.setText("Reporte por cliente");
+        JMNDGReportes.add(JMIReporteCliente);
+
+        JMIReporteTickets.setText("Reporte por tickets");
+        JMNDGReportes.add(JMIReporteTickets);
+
+        JMIReporteTecnico.setText("Reporte por tecnico");
+        JMIReporteTecnico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMIReporteTecnicoActionPerformed(evt);
+            }
+        });
+        JMNDGReportes.add(JMIReporteTecnico);
 
         JMBDirectorGeneral.add(JMNDGReportes);
 
         JMNDGPersonal.setText("Personal");
+
+        JMINuevoTecnico.setText("Nuevo tecnico");
+        JMNDGPersonal.add(JMINuevoTecnico);
+
+        JMIEditarTecnico.setText("Editar tecnico");
+        JMNDGPersonal.add(JMIEditarTecnico);
+
         JMBDirectorGeneral.add(JMNDGPersonal);
 
         JMNDGCerrarSesion.setText("Cerrar Sesión");
@@ -84,7 +111,6 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
                         .addComponent(JLBLogo)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(JLBBienvenido)
                         .addGap(141, 141, 141))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -116,6 +142,14 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JMIReportePolizasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMIReportePolizasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMIReportePolizasActionPerformed
+
+    private void JMIReporteTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMIReporteTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMIReporteTecnicoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,10 +193,14 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
     private javax.swing.JLabel JLBDirectorGeneral;
     private javax.swing.JLabel JLBLogo;
     private javax.swing.JMenuBar JMBDirectorGeneral;
+    private javax.swing.JMenuItem JMIEditarTecnico;
+    private javax.swing.JMenuItem JMINuevoTecnico;
+    private javax.swing.JMenuItem JMIReporteCliente;
+    private javax.swing.JMenuItem JMIReportePolizas;
+    private javax.swing.JMenuItem JMIReporteTecnico;
+    private javax.swing.JMenuItem JMIReporteTickets;
     private javax.swing.JMenu JMNDGCerrarSesion;
     private javax.swing.JMenu JMNDGPersonal;
     private javax.swing.JMenu JMNDGReportes;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     // End of variables declaration//GEN-END:variables
 }
