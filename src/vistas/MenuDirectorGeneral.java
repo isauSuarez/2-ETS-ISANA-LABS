@@ -34,6 +34,8 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
         JLBLogo = new javax.swing.JLabel();
         JMBDirectorGeneral = new javax.swing.JMenuBar();
         JMNDGReportes = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         JMNDGPersonal = new javax.swing.JMenu();
         JMNDGCerrarSesion = new javax.swing.JMenu();
 
@@ -54,6 +56,13 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
         JMBDirectorGeneral.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
 
         JMNDGReportes.setText("Reportes");
+
+        jMenuItem1.setText("jMenuItem1");
+        JMNDGReportes.add(jMenuItem1);
+
+        jMenuItem2.setText("jMenuItem2");
+        JMNDGReportes.add(jMenuItem2);
+
         JMBDirectorGeneral.add(JMNDGReportes);
 
         JMNDGPersonal.setText("Personal");
@@ -75,19 +84,19 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
                         .addComponent(JLBLogo)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(JLBBienvenido)
+                        .addGap(141, 141, 141))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 88, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(JLBBienvenido)
-                                .addGap(131, 131, 131))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(JLBDirectorGeneral)
-                                .addGap(112, 112, 112))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(JBNReporteTickets)
-                                .addGap(57, 57, 57)
-                                .addComponent(JBNReporteCliente)
-                                .addGap(89, 89, 89))))))
+                        .addComponent(JBNReporteTickets)
+                        .addGap(57, 57, 57)
+                        .addComponent(JBNReporteCliente)
+                        .addGap(89, 89, 89))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(JLBDirectorGeneral)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,5 +163,7 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
     private javax.swing.JMenu JMNDGCerrarSesion;
     private javax.swing.JMenu JMNDGPersonal;
     private javax.swing.JMenu JMNDGReportes;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     // End of variables declaration//GEN-END:variables
 }
