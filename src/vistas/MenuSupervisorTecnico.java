@@ -33,9 +33,13 @@ public class MenuSupervisorTecnico extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         JMBSupervisorTecnico = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
+        JMNSTTickets = new javax.swing.JMenu();
+        JMINuevoTicket = new javax.swing.JMenuItem();
+        JMIAsignarTicket = new javax.swing.JMenuItem();
+        JMIEditarTicket = new javax.swing.JMenuItem();
+        JMNSTTecnicos = new javax.swing.JMenu();
+        JMIEditarTecnico = new javax.swing.JMenuItem();
+        JMNSTCerrarSesion = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,14 +57,33 @@ public class MenuSupervisorTecnico extends javax.swing.JFrame {
 
         JMBSupervisorTecnico.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
 
-        jMenu1.setText("Tickets");
-        JMBSupervisorTecnico.add(jMenu1);
+        JMNSTTickets.setText("Tickets");
 
-        jMenu2.setText("Técnicos");
-        JMBSupervisorTecnico.add(jMenu2);
+        JMINuevoTicket.setText("Nuevo Ticket");
+        JMINuevoTicket.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMINuevoTicketActionPerformed(evt);
+            }
+        });
+        JMNSTTickets.add(JMINuevoTicket);
 
-        jMenu3.setText("Cerrar Sesión");
-        JMBSupervisorTecnico.add(jMenu3);
+        JMIAsignarTicket.setText("Asignar Ticket");
+        JMNSTTickets.add(JMIAsignarTicket);
+
+        JMIEditarTicket.setText("Editar Ticket");
+        JMNSTTickets.add(JMIEditarTicket);
+
+        JMBSupervisorTecnico.add(JMNSTTickets);
+
+        JMNSTTecnicos.setText("Técnicos");
+
+        JMIEditarTecnico.setText("Editar Técnico");
+        JMNSTTecnicos.add(JMIEditarTecnico);
+
+        JMBSupervisorTecnico.add(JMNSTTecnicos);
+
+        JMNSTCerrarSesion.setText("Cerrar Sesión");
+        JMBSupervisorTecnico.add(JMNSTCerrarSesion);
 
         setJMenuBar(JMBSupervisorTecnico);
 
@@ -108,6 +131,10 @@ public class MenuSupervisorTecnico extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void JMINuevoTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMINuevoTicketActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMINuevoTicketActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -147,11 +174,15 @@ public class MenuSupervisorTecnico extends javax.swing.JFrame {
     private javax.swing.JLabel JLBBienvenido;
     private javax.swing.JLabel JLBSupervisorTecnico;
     private javax.swing.JMenuBar JMBSupervisorTecnico;
+    private javax.swing.JMenuItem JMIAsignarTicket;
+    private javax.swing.JMenuItem JMIEditarTecnico;
+    private javax.swing.JMenuItem JMIEditarTicket;
+    private javax.swing.JMenuItem JMINuevoTicket;
+    private javax.swing.JMenu JMNSTCerrarSesion;
+    private javax.swing.JMenu JMNSTTecnicos;
+    private javax.swing.JMenu JMNSTTickets;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     // End of variables declaration//GEN-END:variables
 }
