@@ -26,21 +26,175 @@ public class NuevoTicket extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        JLBNuevoTicket = new javax.swing.JLabel();
+        JLBDescripcion1 = new javax.swing.JLabel();
+        JLBDescripcion2 = new javax.swing.JLabel();
+        JLBDescripcion3 = new javax.swing.JLabel();
+        JTFNumeroDePoliza = new javax.swing.JTextField();
+        JLBDescripcion4 = new javax.swing.JLabel();
+        JLBNombre3 = new javax.swing.JLabel();
+        JLBNombre4 = new javax.swing.JLabel();
+        JLBNombre5 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        JBNGuardarCliente = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        JLBNuevoTicket.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
+        JLBNuevoTicket.setText("Nuevo Ticket");
+
+        JLBDescripcion1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion1.setText("Ingrese el numero de póliza");
+
+        JLBDescripcion2.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion2.setText("del solicitante y modalidad");
+
+        JLBDescripcion3.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion3.setText("de atención requerida");
+
+        JTFNumeroDePoliza.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 14)); // NOI18N
+        JTFNumeroDePoliza.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFNumeroDePoliza.setText("Numero de poliza");
+        JTFNumeroDePoliza.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        JTFNumeroDePoliza.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTFNumeroDePolizaActionPerformed(evt);
+            }
+        });
+
+        JLBDescripcion4.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion4.setText("Tipo de servicio");
+
+        JLBNombre3.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBNombre3.setText("Escencial");
+
+        JLBNombre4.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBNombre4.setText("Profesional");
+
+        JLBNombre5.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBNombre5.setText("Empresarial");
+
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+
+        JBNGuardarCliente.setBackground(new java.awt.Color(0, 165, 104));
+        JBNGuardarCliente.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNGuardarCliente.setText("Guardar");
+        JBNGuardarCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        jButton1.setText("Cancelar");
+        jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JLBDescripcion2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addComponent(JLBNuevoTicket))
+                            .addComponent(JLBDescripcion1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addComponent(JLBDescripcion3))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(JTFNumeroDePoliza, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(148, 148, 148)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(JLBNombre3)
+                                            .addComponent(JLBNombre4)))
+                                    .addComponent(JLBNombre5, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGap(27, 27, 27)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jRadioButton2)
+                                    .addComponent(jRadioButton3)
+                                    .addComponent(jRadioButton1)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(JLBDescripcion4)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(JBNGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(149, 149, 149))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JLBNuevoTicket)
+                        .addGap(26, 26, 26)
+                        .addComponent(JLBDescripcion1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLBDescripcion2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLBDescripcion3)
+                        .addGap(18, 18, 18)
+                        .addComponent(JTFNumeroDePoliza, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)
+                        .addComponent(JLBDescripcion4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioButton1)
+                            .addComponent(JLBNombre3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JLBNombre4)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jRadioButton2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton3)
+                                    .addComponent(JLBNombre5))))
+                        .addGap(18, 18, 18)
+                        .addComponent(JBNGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JTFNumeroDePolizaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTFNumeroDePolizaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTFNumeroDePolizaActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +232,20 @@ public class NuevoTicket extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBNGuardarCliente;
+    private javax.swing.JLabel JLBDescripcion1;
+    private javax.swing.JLabel JLBDescripcion2;
+    private javax.swing.JLabel JLBDescripcion3;
+    private javax.swing.JLabel JLBDescripcion4;
+    private javax.swing.JLabel JLBNombre3;
+    private javax.swing.JLabel JLBNombre4;
+    private javax.swing.JLabel JLBNombre5;
+    private javax.swing.JLabel JLBNuevoTicket;
+    private javax.swing.JTextField JTFNumeroDePoliza;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
     // End of variables declaration//GEN-END:variables
 }
