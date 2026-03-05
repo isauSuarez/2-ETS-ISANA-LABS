@@ -15,6 +15,7 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
      */
     public MenuDirectorGeneral() {
         initComponents();
+        JMBDirectorGeneral.add(javax.swing.Box.createHorizontalGlue(), 2);
     }
 
     /**
@@ -26,27 +27,82 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        JLBBienvenido = new javax.swing.JLabel();
+        JLBDirectorGeneral = new javax.swing.JLabel();
+        JBNReporteTickets = new javax.swing.JButton();
+        JBNReporteCliente = new javax.swing.JButton();
+        JLBLogo = new javax.swing.JLabel();
+        JMBDirectorGeneral = new javax.swing.JMenuBar();
+        JMNDGReportes = new javax.swing.JMenu();
+        JMNDGPersonal = new javax.swing.JMenu();
+        JMNDGCerrarSesion = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("700 venas");
+        JLBBienvenido.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
+        JLBBienvenido.setText("¡Bienvenido!");
+
+        JLBDirectorGeneral.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
+        JLBDirectorGeneral.setText("Director General");
+
+        JBNReporteTickets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/tickets mini.png"))); // NOI18N
+
+        JBNReporteCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/CLIENTE MINI.png"))); // NOI18N
+
+        JLBLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+
+        JMBDirectorGeneral.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+
+        JMNDGReportes.setText("Reportes");
+        JMBDirectorGeneral.add(JMNDGReportes);
+
+        JMNDGPersonal.setText("Personal");
+        JMBDirectorGeneral.add(JMNDGPersonal);
+
+        JMNDGCerrarSesion.setText("Cerrar Sesión");
+        JMBDirectorGeneral.add(JMNDGCerrarSesion);
+
+        setJMenuBar(JMBDirectorGeneral);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(178, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(169, 169, 169))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JLBLogo)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 88, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JLBBienvenido)
+                                .addGap(131, 131, 131))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JLBDirectorGeneral)
+                                .addGap(112, 112, 112))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JBNReporteTickets)
+                                .addGap(57, 57, 57)
+                                .addComponent(JBNReporteCliente)
+                                .addGap(89, 89, 89))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(107, 107, 107)
-                .addComponent(jLabel1)
-                .addContainerGap(177, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addComponent(JLBBienvenido)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(JLBDirectorGeneral)
+                .addGap(41, 41, 41)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(JBNReporteTickets)
+                    .addComponent(JBNReporteCliente))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(JLBLogo)
+                .addGap(16, 16, 16))
         );
 
         pack();
@@ -88,6 +144,14 @@ public class MenuDirectorGeneral extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton JBNReporteCliente;
+    private javax.swing.JButton JBNReporteTickets;
+    private javax.swing.JLabel JLBBienvenido;
+    private javax.swing.JLabel JLBDirectorGeneral;
+    private javax.swing.JLabel JLBLogo;
+    private javax.swing.JMenuBar JMBDirectorGeneral;
+    private javax.swing.JMenu JMNDGCerrarSesion;
+    private javax.swing.JMenu JMNDGPersonal;
+    private javax.swing.JMenu JMNDGReportes;
     // End of variables declaration//GEN-END:variables
 }
