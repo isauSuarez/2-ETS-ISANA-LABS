@@ -50,16 +50,16 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="JTFNombreCliente" min="-2" pref="266" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                       <Component id="JTFCorreoCliente" alignment="1" min="-2" pref="266" max="-2" attributes="0"/>
                       <Component id="JTFTelefonoCliente" alignment="0" min="-2" pref="266" max="-2" attributes="0"/>
                       <Component id="JTFApellidoCliente" alignment="0" min="-2" pref="266" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="128" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="JLBRegistrarTecnico" min="-2" max="-2" attributes="0"/>
@@ -78,14 +78,11 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Component id="JLBRegistrarTecnico" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JLBNombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JTFNombreCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <Component id="JLBNombre" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="JLBApellido" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="JLBATelefono" min="-2" max="-2" attributes="0"/>
@@ -93,6 +90,8 @@
                       <Component id="JLBCorreo" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
+                      <Component id="JTFNombreCliente" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="JTFApellidoCliente" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="JTFTelefonoCliente" min="-2" max="-2" attributes="0"/>
@@ -100,7 +99,7 @@
                       <Component id="JTFCorreoCliente" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
               <Component id="JBNGuardarCliente" min="-2" pref="42" max="-2" attributes="0"/>
               <EmptySpace pref="72" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
