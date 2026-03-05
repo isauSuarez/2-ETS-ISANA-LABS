@@ -54,7 +54,7 @@ public class Loing extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(0, 165, 104));
+        jButton1.setBackground(new java.awt.Color(2, 146, 143));
         jButton1.setText("jButton1");
 
         jTextField3.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 10)); // NOI18N
