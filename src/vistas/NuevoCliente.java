@@ -119,7 +119,6 @@ public class NuevoCliente extends javax.swing.JFrame {
                         .addGap(1, 1, 1))
                     .addComponent(JLBATelefono, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(JLBApellido, javax.swing.GroupLayout.Alignment.LEADING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(JTFNombreCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
