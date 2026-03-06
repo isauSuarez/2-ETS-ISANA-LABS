@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package vistas;
+package Director_General;
 
 /**
  *
@@ -42,7 +42,6 @@ public class NuevoTecnico extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(400, 500));
 
         JLBRegistrarTecnico.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
         JLBRegistrarTecnico.setText("Registrar técnico:");
