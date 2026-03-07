@@ -33,16 +33,16 @@ public class CancelarPoliza extends javax.swing.JFrame {
         JBNGuardarCliente1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         lblAyuda = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(153, 153, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Cancelar Póliza");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 17, 240, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 240, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel2.setText("Ingrese el numero de póliza");
@@ -65,36 +65,18 @@ public class CancelarPoliza extends javax.swing.JFrame {
         JBNGuardarCliente1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JBNGuardarCliente1.setText("Confirmar");
         JBNGuardarCliente1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        JBNGuardarCliente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBNGuardarCliente1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(JBNGuardarCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 213, 132, 26));
 
         jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         jButton1.setText("Cancelar");
         jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 245, 69, 29));
 
         lblAyuda.setForeground(new java.awt.Color(204, 204, 204));
         lblAyuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/signo-de-pregunta.png"))); // NOI18N
         lblAyuda.setToolTipText("Si olvidaste tu contraseña, contacta al administrador de sistemas.");
         lblAyuda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        lblAyuda.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblAyudaMouseClicked(evt);
-            }
-        });
         getContentPane().add(lblAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 33, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -102,22 +84,6 @@ public class CancelarPoliza extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void JBNGuardarCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNGuardarCliente1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JBNGuardarCliente1ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void lblAyudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAyudaMouseClicked
-        // Muestra una ventana emergente con información
-        javax.swing.JOptionPane.showMessageDialog(this,
-            "Por favor, ingresa tu número de empleado en 'Usuario'.\n\nSi tienes problemas, llama a Soporte Técnico.",
-            "Ayuda de Inicio de Sesión",
-            javax.swing.JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_lblAyudaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -144,14 +110,7 @@ public class CancelarPoliza extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(CancelarPoliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CancelarPoliza().setVisible(true);
-            }
-        });
+        //</editor-fold>]
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -160,7 +119,6 @@ public class CancelarPoliza extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblAyuda;
     // End of variables declaration//GEN-END:variables
