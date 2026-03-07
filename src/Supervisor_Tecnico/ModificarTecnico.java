@@ -26,21 +26,203 @@ public class ModificarTecnico extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        JLBEditarTecnico = new javax.swing.JLabel();
+        JLBDescripcion1 = new javax.swing.JLabel();
+        JLBDescripcion2 = new javax.swing.JLabel();
+        JLBDescripcion3 = new javax.swing.JLabel();
+        JTFNumeroEmpleado = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        JBNSiguienteTF = new javax.swing.JButton();
+        JBNSiguienteJLS = new javax.swing.JButton();
+        JLBLogo = new javax.swing.JLabel();
+        JBNCancelar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        JLBEditarTecnico.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        JLBEditarTecnico.setForeground(new java.awt.Color(102, 102, 102));
+        JLBEditarTecnico.setText("Editar técnico");
+
+        JLBDescripcion1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion1.setText("Ingrese el numero de empleado");
+
+        JLBDescripcion2.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion2.setText("del técnico o seleccione de la lista");
+
+        JLBDescripcion3.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion3.setText("para editar su información actual");
+
+        JTFNumeroEmpleado.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
+        JTFNumeroEmpleado.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFNumeroEmpleado.setText("Numero de empleado");
+        JTFNumeroEmpleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+        JTFNumeroEmpleado.setPreferredSize(new java.awt.Dimension(150, 30));
+        JTFNumeroEmpleado.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                JTFNumeroEmpleadoFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                JTFNumeroEmpleadoFocusLost(evt);
+            }
+        });
+        JTFNumeroEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTFNumeroEmpleadoActionPerformed(evt);
+            }
+        });
+
+        jList1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+        jList1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "ASCENCIO GARCIA JOSE ALEJANDRO ", "SUAREZ FLORES ISAU", "BEJAR ROSALES NAMUR ALEJANDRO", "MEDINA GARCIA VICTOR IVAN" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        JBNSiguienteTF.setBackground(new java.awt.Color(39, 174, 96));
+        JBNSiguienteTF.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JBNSiguienteTF.setForeground(new java.awt.Color(255, 255, 255));
+        JBNSiguienteTF.setText("Siguiente");
+        JBNSiguienteTF.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(39, 174, 96), 1, true));
+        JBNSiguienteTF.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBNSiguienteTF.setOpaque(true);
+        JBNSiguienteTF.setPreferredSize(new java.awt.Dimension(100, 25));
+        JBNSiguienteTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNSiguienteTFActionPerformed(evt);
+            }
+        });
+
+        JBNSiguienteJLS.setBackground(new java.awt.Color(39, 174, 96));
+        JBNSiguienteJLS.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JBNSiguienteJLS.setForeground(new java.awt.Color(255, 255, 255));
+        JBNSiguienteJLS.setText("Siguiente");
+        JBNSiguienteJLS.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(39, 174, 96), 1, true));
+        JBNSiguienteJLS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBNSiguienteJLS.setOpaque(true);
+        JBNSiguienteJLS.setPreferredSize(new java.awt.Dimension(100, 25));
+        JBNSiguienteJLS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNSiguienteJLSActionPerformed(evt);
+            }
+        });
+
+        JLBLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+
+        JBNCancelar.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNCancelar.setText("Cancelar");
+        JBNCancelar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        JBNCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JLBLogo)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(67, 67, 67)
+                                .addComponent(JBNSiguienteJLS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 39, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JLBEditarTecnico)
+                                .addGap(139, 139, 139))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(JLBDescripcion3)
+                                    .addGap(110, 110, 110))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(JLBDescripcion2)
+                                        .addComponent(JLBDescripcion1))
+                                    .addGap(108, 108, 108)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(JTFNumeroEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(42, 42, 42))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JBNSiguienteTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(148, 148, 148))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(JLBEditarTecnico)
+                .addGap(18, 18, 18)
+                .addComponent(JLBDescripcion1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JLBDescripcion2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JLBDescripcion3)
+                .addGap(18, 18, 18)
+                .addComponent(JTFNumeroEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(JBNSiguienteTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(JBNSiguienteJLS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(JLBLogo))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JTFNumeroEmpleadoFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_JTFNumeroEmpleadoFocusGained
+        if (txtUsuario.getText().equals("Usuario")) {
+            txtUsuario.setText("");
+            txtUsuario.setForeground(new java.awt.Color(51, 51, 51)); // Letra oscura al escribir
+        }
+    }//GEN-LAST:event_JTFNumeroEmpleadoFocusGained
+
+    private void JTFNumeroEmpleadoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_JTFNumeroEmpleadoFocusLost
+        if (txtUsuario.getText().isEmpty()) {
+            txtUsuario.setText("Usuario");
+            txtUsuario.setForeground(new java.awt.Color(153, 153, 153)); // Vuelve al gris claro
+        }
+    }//GEN-LAST:event_JTFNumeroEmpleadoFocusLost
+
+    private void JTFNumeroEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTFNumeroEmpleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTFNumeroEmpleadoActionPerformed
+
+    private void JBNSiguienteTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNSiguienteTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNSiguienteTFActionPerformed
+
+    private void JBNSiguienteJLSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNSiguienteJLSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNSiguienteJLSActionPerformed
+
+    private void JBNCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +260,16 @@ public class ModificarTecnico extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBNCancelar;
+    private javax.swing.JButton JBNSiguienteJLS;
+    private javax.swing.JButton JBNSiguienteTF;
+    private javax.swing.JLabel JLBDescripcion1;
+    private javax.swing.JLabel JLBDescripcion2;
+    private javax.swing.JLabel JLBDescripcion3;
+    private javax.swing.JLabel JLBEditarTecnico;
+    private javax.swing.JLabel JLBLogo;
+    private javax.swing.JTextField JTFNumeroEmpleado;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

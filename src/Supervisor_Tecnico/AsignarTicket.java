@@ -26,21 +26,232 @@ public class AsignarTicket extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txtUsuario = new javax.swing.JTextField();
+        JLBAsignarTecnico = new javax.swing.JLabel();
+        JLBDescripcion1 = new javax.swing.JLabel();
+        JLBDescripcion2 = new javax.swing.JLabel();
+        JLBDescripcion3 = new javax.swing.JLabel();
+        JTFNumeroTicket = new javax.swing.JTextField();
+        JBNSiguienteTF = new javax.swing.JButton();
+        JCBTickets = new javax.swing.JComboBox<>();
+        JBNSiguienteCB = new javax.swing.JButton();
+        JLBLogo = new javax.swing.JLabel();
+        JBNCancelar = new javax.swing.JButton();
+
+        txtUsuario.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txtUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtUsuario.setText("Usuario");
+        txtUsuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+        txtUsuario.setPreferredSize(new java.awt.Dimension(150, 30));
+        txtUsuario.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtUsuarioFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtUsuarioFocusLost(evt);
+            }
+        });
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        JLBAsignarTecnico.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        JLBAsignarTecnico.setForeground(new java.awt.Color(102, 102, 102));
+        JLBAsignarTecnico.setText("Asignar técnico");
+
+        JLBDescripcion1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion1.setText("Ingrese o seleccione el numero");
+
+        JLBDescripcion2.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion2.setText("de ticket al cual se le va a ");
+
+        JLBDescripcion3.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion3.setText("asignar un técnico");
+
+        JTFNumeroTicket.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
+        JTFNumeroTicket.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFNumeroTicket.setText("Numero de ticket");
+        JTFNumeroTicket.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+        JTFNumeroTicket.setPreferredSize(new java.awt.Dimension(150, 30));
+        JTFNumeroTicket.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                JTFNumeroTicketFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                JTFNumeroTicketFocusLost(evt);
+            }
+        });
+        JTFNumeroTicket.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTFNumeroTicketActionPerformed(evt);
+            }
+        });
+
+        JBNSiguienteTF.setBackground(new java.awt.Color(39, 174, 96));
+        JBNSiguienteTF.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JBNSiguienteTF.setForeground(new java.awt.Color(255, 255, 255));
+        JBNSiguienteTF.setText("Siguiente");
+        JBNSiguienteTF.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(39, 174, 96), 1, true));
+        JBNSiguienteTF.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBNSiguienteTF.setOpaque(true);
+        JBNSiguienteTF.setPreferredSize(new java.awt.Dimension(100, 25));
+        JBNSiguienteTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNSiguienteTFActionPerformed(evt);
+            }
+        });
+
+        JCBTickets.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
+        JCBTickets.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ticket", "Ticket", "Ticket", "Ticket" }));
+        JCBTickets.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+
+        JBNSiguienteCB.setBackground(new java.awt.Color(39, 174, 96));
+        JBNSiguienteCB.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JBNSiguienteCB.setForeground(new java.awt.Color(255, 255, 255));
+        JBNSiguienteCB.setText("Siguiente");
+        JBNSiguienteCB.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(39, 174, 96), 1, true));
+        JBNSiguienteCB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBNSiguienteCB.setOpaque(true);
+        JBNSiguienteCB.setPreferredSize(new java.awt.Dimension(100, 25));
+        JBNSiguienteCB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNSiguienteCBActionPerformed(evt);
+            }
+        });
+
+        JLBLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+
+        JBNCancelar.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNCancelar.setText("Cancelar");
+        JBNCancelar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        JBNCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(JLBLogo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(144, 144, 144)
+                                .addComponent(JBNSiguienteTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(105, 105, 105)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JLBDescripcion1)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(19, 19, 19)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(JLBDescripcion2)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(15, 15, 15)
+                                                .addComponent(JLBDescripcion3))))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(126, 126, 126)
+                                .addComponent(JLBAsignarTecnico))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(60, 60, 60)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(JTFNumeroTicket, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                                    .addComponent(JCBTickets, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(144, 144, 144)
+                                .addComponent(JBNSiguienteCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 55, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(JLBAsignarTecnico)
+                .addGap(27, 27, 27)
+                .addComponent(JLBDescripcion1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JLBDescripcion2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JLBDescripcion3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(JTFNumeroTicket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(JBNSiguienteTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(JCBTickets, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JBNSiguienteCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JLBLogo))
+                    .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtUsuarioFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUsuarioFocusGained
+        if (txtUsuario.getText().equals("Usuario")) {
+            txtUsuario.setText("");
+            txtUsuario.setForeground(new java.awt.Color(51, 51, 51)); // Letra oscura al escribir
+        }
+    }//GEN-LAST:event_txtUsuarioFocusGained
+
+    private void txtUsuarioFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUsuarioFocusLost
+        if (txtUsuario.getText().isEmpty()) {
+            txtUsuario.setText("Usuario");
+            txtUsuario.setForeground(new java.awt.Color(153, 153, 153)); // Vuelve al gris claro
+        }
+    }//GEN-LAST:event_txtUsuarioFocusLost
+
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuarioActionPerformed
+
+    private void JTFNumeroTicketFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_JTFNumeroTicketFocusGained
+        if (txtUsuario.getText().equals("Usuario")) {
+            txtUsuario.setText("");
+            txtUsuario.setForeground(new java.awt.Color(51, 51, 51)); // Letra oscura al escribir
+        }
+    }//GEN-LAST:event_JTFNumeroTicketFocusGained
+
+    private void JTFNumeroTicketFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_JTFNumeroTicketFocusLost
+        if (txtUsuario.getText().isEmpty()) {
+            txtUsuario.setText("Usuario");
+            txtUsuario.setForeground(new java.awt.Color(153, 153, 153)); // Vuelve al gris claro
+        }
+    }//GEN-LAST:event_JTFNumeroTicketFocusLost
+
+    private void JTFNumeroTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTFNumeroTicketActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTFNumeroTicketActionPerformed
+
+    private void JBNSiguienteTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNSiguienteTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNSiguienteTFActionPerformed
+
+    private void JBNSiguienteCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNSiguienteCBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNSiguienteCBActionPerformed
+
+    private void JBNCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +289,16 @@ public class AsignarTicket extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBNCancelar;
+    private javax.swing.JButton JBNSiguienteCB;
+    private javax.swing.JButton JBNSiguienteTF;
+    private javax.swing.JComboBox<String> JCBTickets;
+    private javax.swing.JLabel JLBAsignarTecnico;
+    private javax.swing.JLabel JLBDescripcion1;
+    private javax.swing.JLabel JLBDescripcion2;
+    private javax.swing.JLabel JLBDescripcion3;
+    private javax.swing.JLabel JLBLogo;
+    private javax.swing.JTextField JTFNumeroTicket;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
