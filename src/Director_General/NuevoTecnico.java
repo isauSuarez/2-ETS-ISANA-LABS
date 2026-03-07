@@ -15,6 +15,8 @@ public class NuevoTecnico extends javax.swing.JFrame {
      */
     public NuevoTecnico() {
         initComponents();
+        this.setSize(450, 450); // Fuerza el tamaño exacto
+        this.setLocationRelativeTo(null); // Centra la ventana en tu monitor
     }
 
     /**
@@ -42,44 +44,61 @@ public class NuevoTecnico extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(450, 450));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        JLBRegistrarTecnico.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
+        JLBRegistrarTecnico.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         JLBRegistrarTecnico.setText("Registrar técnico:");
+        getContentPane().add(JLBRegistrarTecnico, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
 
         JLBNombre.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBNombre.setText("Nombre (s)");
+        getContentPane().add(JLBNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 80, -1));
 
         JTFNombre.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
         JTFNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTFNombre.setText("Nombre (s)");
         JTFNombre.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        getContentPane().add(JTFNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 310, 30));
 
         JLBApellido.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBApellido.setText("Apellido (s)");
+        getContentPane().add(JLBApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 80, -1));
 
         JTFApellido.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
         JTFApellido.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTFApellido.setText("Apellido (s)");
         JTFApellido.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        getContentPane().add(JTFApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 310, 30));
 
         JLBATelefono.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBATelefono.setText("Telefono");
+        getContentPane().add(JLBATelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 70, -1));
 
         JTFTelefono.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
         JTFTelefono.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTFTelefono.setText("Telefono");
         JTFTelefono.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        getContentPane().add(JTFTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 310, 30));
 
         JLBCorreo.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBCorreo.setText("Correo");
+        getContentPane().add(JLBCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 70, -1));
 
         JTFCorreo.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 12)); // NOI18N
         JTFCorreo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTFCorreo.setText("Correo");
         JTFCorreo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        JTFCorreo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTFCorreoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(JTFCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 310, 30));
 
         JLBEspecialidad.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBEspecialidad.setText("Especialidad");
+        getContentPane().add(JLBEspecialidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, -1, -1));
 
         JCBEspecialidades.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JCBEspecialidades.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Soporte técnico general", "Soporte de redes", "Soporte de impresoras", "Soporte de portatiles", "Soporte de equipos", "Cableado estructurado" }));
@@ -89,11 +108,13 @@ public class NuevoTecnico extends javax.swing.JFrame {
                 JCBEspecialidadesActionPerformed(evt);
             }
         });
+        getContentPane().add(JCBEspecialidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 176, -1));
 
         JBNGuardar.setBackground(new java.awt.Color(0, 165, 104));
         JBNGuardar.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JBNGuardar.setText("Guardar");
         JBNGuardar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        getContentPane().add(JBNGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, 102, 42));
 
         jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         jButton1.setText("Cancelar");
@@ -103,92 +124,10 @@ public class NuevoTecnico extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 69, 29));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(117, 117, 117)
-                            .addComponent(JLBRegistrarTecnico))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(107, 107, 107)
-                            .addComponent(JTFNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(50, 50, 50)
-                            .addComponent(JLBEspecialidad)
-                            .addGap(32, 32, 32)
-                            .addComponent(JCBEspecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(JLBCorreo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(JTFCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(JLBNombre)
-                                .addGap(290, 290, 290))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(JLBATelefono)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(JTFTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(JLBApellido)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(JTFApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(56, 56, 56)
-                                        .addComponent(JBNGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(JLBRegistrarTecnico)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JLBNombre)
-                    .addComponent(JTFNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JLBApellido)
-                    .addComponent(JTFApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JLBATelefono)
-                    .addComponent(JTFTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JLBCorreo)
-                    .addComponent(JTFCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JCBEspecialidades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JLBEspecialidad))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(JBNGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(57, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addGap(32, 32, 32))))
-        );
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -200,6 +139,10 @@ public class NuevoTecnico extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void JTFCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTFCorreoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTFCorreoActionPerformed
 
     /**
      * @param args the command line arguments
