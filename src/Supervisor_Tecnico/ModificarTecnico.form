@@ -24,40 +24,52 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="141" pref="141" max="-2" attributes="0"/>
-              <Component id="JLBEditarTecnico" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="141" pref="141" max="-2" attributes="0"/>
+                      <Component id="JLBEditarTecnico" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
+                      <Component id="JLBDescripcion1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="78" pref="78" max="-2" attributes="0"/>
+                      <Component id="JLBDescripcion2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="78" pref="78" max="-2" attributes="0"/>
+                      <Component id="JLBDescripcion3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
+                      <Component id="JTFNumeroEmpleado" min="-2" pref="313" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="152" pref="152" max="-2" attributes="0"/>
+                      <Component id="JBNSiguienteTF" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="298" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="36" max="32767" attributes="0"/>
           </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="91" pref="91" max="-2" attributes="0"/>
-              <Component id="JLBDescripcion1" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="78" pref="78" max="-2" attributes="0"/>
-              <Component id="JLBDescripcion2" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="78" pref="78" max="-2" attributes="0"/>
-              <Component id="JLBDescripcion3" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-              <Component id="JTFNumeroEmpleado" min="-2" pref="313" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="152" pref="152" max="-2" attributes="0"/>
-              <Component id="JBNSiguienteTF" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="298" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
               <Component id="JLBLogo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="67" pref="67" max="-2" attributes="0"/>
-              <Component id="JBNSiguienteJLS" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="77" pref="77" max="-2" attributes="0"/>
-              <Component id="JBNCancelar" min="-2" pref="69" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="67" pref="67" max="-2" attributes="0"/>
+                      <Component id="JBNSiguienteJLS" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="JBNCancelar" min="-2" pref="69" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -79,15 +91,16 @@
               <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="63" max="-2" attributes="0"/>
               <EmptySpace min="33" pref="33" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Component id="JLBLogo" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="JBNSiguienteJLS" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="51" pref="51" max="-2" attributes="0"/>
+                      <Component id="JBNSiguienteJLS" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="JBNCancelar" min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>

@@ -26,21 +26,193 @@ public class ModificarTicket extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        JTFNumeroTicket = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        JBNSiguienteTF = new javax.swing.JButton();
+        JBNSiguienteJLS = new javax.swing.JButton();
+        JLBLogo = new javax.swing.JLabel();
+        JBNCancelar = new javax.swing.JButton();
+        JLBEditarTicket = new javax.swing.JLabel();
+        JLBDescripcion1 = new javax.swing.JLabel();
+        JLBDescripcion2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        JTFNumeroTicket.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
+        JTFNumeroTicket.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        JTFNumeroTicket.setText("Numero de Ticket");
+        JTFNumeroTicket.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+        JTFNumeroTicket.setPreferredSize(new java.awt.Dimension(150, 30));
+        JTFNumeroTicket.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                JTFNumeroTicketFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                JTFNumeroTicketFocusLost(evt);
+            }
+        });
+        JTFNumeroTicket.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTFNumeroTicketActionPerformed(evt);
+            }
+        });
+
+        jList1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+        jList1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "56 Macias y asociados", "57 Pajas y forrajes", "58 Mama cocina casera", "59 Melanie lashes" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        JBNSiguienteTF.setBackground(new java.awt.Color(39, 174, 96));
+        JBNSiguienteTF.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JBNSiguienteTF.setForeground(new java.awt.Color(255, 255, 255));
+        JBNSiguienteTF.setText("Siguiente");
+        JBNSiguienteTF.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(39, 174, 96), 1, true));
+        JBNSiguienteTF.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBNSiguienteTF.setOpaque(true);
+        JBNSiguienteTF.setPreferredSize(new java.awt.Dimension(100, 25));
+        JBNSiguienteTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNSiguienteTFActionPerformed(evt);
+            }
+        });
+
+        JBNSiguienteJLS.setBackground(new java.awt.Color(39, 174, 96));
+        JBNSiguienteJLS.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JBNSiguienteJLS.setForeground(new java.awt.Color(255, 255, 255));
+        JBNSiguienteJLS.setText("Siguiente");
+        JBNSiguienteJLS.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(39, 174, 96), 1, true));
+        JBNSiguienteJLS.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBNSiguienteJLS.setOpaque(true);
+        JBNSiguienteJLS.setPreferredSize(new java.awt.Dimension(100, 25));
+        JBNSiguienteJLS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNSiguienteJLSActionPerformed(evt);
+            }
+        });
+
+        JLBLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+
+        JBNCancelar.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNCancelar.setText("Cancelar");
+        JBNCancelar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        JBNCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNCancelarActionPerformed(evt);
+            }
+        });
+
+        JLBEditarTicket.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        JLBEditarTicket.setForeground(new java.awt.Color(102, 102, 102));
+        JLBEditarTicket.setText("Editar Ticket");
+
+        JLBDescripcion1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion1.setText("Ingrese o seleccione de la lista");
+
+        JLBDescripcion2.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion2.setText("El numero de ticket a editar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(141, 141, 141)
+                        .addComponent(JLBEditarTicket))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(JTFNumeroTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(36, 42, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(JLBLogo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(JLBDescripcion2))
+                    .addComponent(JLBDescripcion1))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(JBNSiguienteTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(149, 149, 149))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JBNSiguienteJLS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(144, 144, 144))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 420, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(JLBEditarTicket)
+                .addGap(18, 18, 18)
+                .addComponent(JLBDescripcion1)
+                .addGap(6, 6, 6)
+                .addComponent(JLBDescripcion2)
+                .addGap(18, 18, 18)
+                .addComponent(JTFNumeroTicket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(JBNSiguienteTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(JBNSiguienteJLS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(JLBLogo)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JTFNumeroTicketFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_JTFNumeroTicketFocusGained
+        if (JTFNumeroTicket.getText().equals("Usuario")) {
+            JTFNumeroTicket.setText("");
+            JTFNumeroTicket.setForeground(new java.awt.Color(51, 51, 51)); // Letra oscura al escribir
+        }
+    }//GEN-LAST:event_JTFNumeroTicketFocusGained
+
+    private void JTFNumeroTicketFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_JTFNumeroTicketFocusLost
+        if (JTFNumeroTicket.getText().isEmpty()) {
+            JTFNumeroTicket.setText("Usuario");
+            JTFNumeroTicket.setForeground(new java.awt.Color(153, 153, 153)); // Vuelve al gris claro
+        }
+    }//GEN-LAST:event_JTFNumeroTicketFocusLost
+
+    private void JTFNumeroTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTFNumeroTicketActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTFNumeroTicketActionPerformed
+
+    private void JBNSiguienteTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNSiguienteTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNSiguienteTFActionPerformed
+
+    private void JBNSiguienteJLSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNSiguienteJLSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNSiguienteJLSActionPerformed
+
+    private void JBNCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +251,15 @@ public class ModificarTicket extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBNCancelar;
+    private javax.swing.JButton JBNSiguienteJLS;
+    private javax.swing.JButton JBNSiguienteTF;
+    private javax.swing.JLabel JLBDescripcion1;
+    private javax.swing.JLabel JLBDescripcion2;
+    private javax.swing.JLabel JLBEditarTicket;
+    private javax.swing.JLabel JLBLogo;
+    private javax.swing.JTextField JTFNumeroTicket;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
