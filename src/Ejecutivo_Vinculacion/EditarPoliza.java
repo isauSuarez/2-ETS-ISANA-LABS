@@ -51,7 +51,7 @@ public class EditarPoliza extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Registrar usuario:");
+        jLabel1.setText("Editar Poliza");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 240, -1));
 
         JBNGuardarCliente.setBackground(new java.awt.Color(0, 165, 104));

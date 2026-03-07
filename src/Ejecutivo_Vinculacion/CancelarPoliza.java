@@ -39,18 +39,20 @@ public class CancelarPoliza extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Cancelar Póliza");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 240, -1));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Ingrese el numero de póliza");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 77, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 260, 20));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("que sera cancelado.");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 100, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 260, 20));
 
         jTextField1.setForeground(new java.awt.Color(204, 204, 204));
         jTextField1.setText("                         Número de póliza");
@@ -65,18 +67,28 @@ public class CancelarPoliza extends javax.swing.JFrame {
         JBNGuardarCliente1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JBNGuardarCliente1.setText("Confirmar");
         JBNGuardarCliente1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        getContentPane().add(JBNGuardarCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 213, 132, 26));
+        JBNGuardarCliente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNGuardarCliente1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(JBNGuardarCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 132, 26));
 
         jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         jButton1.setText("Cancelar");
         jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 245, 69, 29));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 69, 29));
 
         lblAyuda.setForeground(new java.awt.Color(204, 204, 204));
         lblAyuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/signo-de-pregunta.png"))); // NOI18N
         lblAyuda.setToolTipText("Si olvidaste tu contraseña, contacta al administrador de sistemas.");
         lblAyuda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(lblAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 33, -1, -1));
+        getContentPane().add(lblAyuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -84,6 +96,14 @@ public class CancelarPoliza extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void JBNGuardarCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNGuardarCliente1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNGuardarCliente1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
