@@ -26,21 +26,195 @@ public class FinalizarTicket extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        JTFTipo = new javax.swing.JTextField();
+        JLBDescripcion = new javax.swing.JLabel();
+        JTANotas = new javax.swing.JTextField();
+        JLBAsignarTecnico = new javax.swing.JLabel();
+        JLBDescripcion1 = new javax.swing.JLabel();
+        JTFEmpresa = new javax.swing.JTextField();
+        JLBDescripcion2 = new javax.swing.JLabel();
+        JLBDescripcion3 = new javax.swing.JLabel();
+        JTADetalles = new javax.swing.JTextField();
+        JCBFinalizado = new javax.swing.JCheckBox();
+        JLBLogo = new javax.swing.JLabel();
+        JBNGuardar = new javax.swing.JButton();
+        JBNCancelar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        JTFTipo.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JTFTipo.setText("Tipo");
+        JTFTipo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        JTFTipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTFTipoActionPerformed(evt);
+            }
+        });
+
+        JLBDescripcion.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion.setText("Detalles del ticket:");
+
+        JTANotas.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JTANotas.setText("Detalles sobre los trabajos realizados para futuras aclaraciones");
+        JTANotas.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+
+        JLBAsignarTecnico.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        JLBAsignarTecnico.setForeground(new java.awt.Color(102, 102, 102));
+        JLBAsignarTecnico.setText("Finalizar Ticket");
+
+        JLBDescripcion1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion1.setText("Solicita: ");
+
+        JTFEmpresa.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JTFEmpresa.setText("Empresa");
+        JTFEmpresa.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+
+        JLBDescripcion2.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion2.setText("Modalidad:");
+
+        JLBDescripcion3.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBDescripcion3.setText("Notas del tecnico");
+
+        JTADetalles.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JTADetalles.setText("Descripción de los servicios a realizar y detalles puntuales");
+        JTADetalles.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
+
+        JCBFinalizado.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JCBFinalizado.setText("¿Ticket Finalizado?");
+        JCBFinalizado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JCBFinalizadoActionPerformed(evt);
+            }
+        });
+
+        JLBLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+
+        JBNGuardar.setBackground(new java.awt.Color(39, 174, 96));
+        JBNGuardar.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JBNGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        JBNGuardar.setText("Guardar");
+        JBNGuardar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(39, 174, 96), 1, true));
+        JBNGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JBNGuardar.setOpaque(true);
+        JBNGuardar.setPreferredSize(new java.awt.Dimension(100, 25));
+        JBNGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNGuardarActionPerformed(evt);
+            }
+        });
+
+        JBNCancelar.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNCancelar.setText("Cancelar");
+        JBNCancelar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        JBNCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBNCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(129, 129, 129)
+                        .addComponent(JLBDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(JLBDescripcion1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(JTFEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(44, 44, 44)
+                                .addComponent(JLBDescripcion2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(JTFTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addComponent(JLBDescripcion3, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(JLBLogo)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(83, 83, 83)
+                                .addComponent(JBNGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(17, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JTANotas, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(JTADetalles, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(17, 17, 17))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(JCBFinalizado, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(115, 115, 115))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(JLBAsignarTecnico)
+                        .addGap(128, 128, 128))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 420, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(JLBAsignarTecnico)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(JLBDescripcion1)
+                    .addComponent(JTFEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JLBDescripcion2)
+                    .addComponent(JTFTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addComponent(JLBDescripcion)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(JTADetalles, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
+                .addComponent(JLBDescripcion3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(JTANotas, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(JLBLogo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(JCBFinalizado)
+                        .addGap(14, 14, 14)
+                        .addComponent(JBNGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(JBNCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JTFTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTFTipoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTFTipoActionPerformed
+
+    private void JCBFinalizadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCBFinalizadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JCBFinalizadoActionPerformed
+
+    private void JBNGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNGuardarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNGuardarActionPerformed
+
+    private void JBNCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBNCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +252,18 @@ public class FinalizarTicket extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBNCancelar;
+    private javax.swing.JButton JBNGuardar;
+    private javax.swing.JCheckBox JCBFinalizado;
+    private javax.swing.JLabel JLBAsignarTecnico;
+    private javax.swing.JLabel JLBDescripcion;
+    private javax.swing.JLabel JLBDescripcion1;
+    private javax.swing.JLabel JLBDescripcion2;
+    private javax.swing.JLabel JLBDescripcion3;
+    private javax.swing.JLabel JLBLogo;
+    private javax.swing.JTextField JTADetalles;
+    private javax.swing.JTextField JTANotas;
+    private javax.swing.JTextField JTFEmpresa;
+    private javax.swing.JTextField JTFTipo;
     // End of variables declaration//GEN-END:variables
 }

@@ -15,6 +15,7 @@ public class MenuEjecutivoVinculacion extends javax.swing.JFrame {
      */
     public MenuEjecutivoVinculacion() {
         initComponents();
+         jMenuBar1.add(javax.swing.Box.createHorizontalGlue(), 2);
     }
 
     /**

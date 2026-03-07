@@ -15,6 +15,7 @@ public class Menu_Tecnico extends javax.swing.JFrame {
      */
     public Menu_Tecnico() {
         initComponents();
+         JMBTecnico.add(javax.swing.Box.createHorizontalGlue(), 2);
     }
 
     /**
@@ -26,21 +27,91 @@ public class Menu_Tecnico extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        JLBBienvenido = new javax.swing.JLabel();
+        JLBSoporteTecnico = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        JBNMisTickets = new javax.swing.JButton();
+        JMBTecnico = new javax.swing.JMenuBar();
+        JMNTTickets = new javax.swing.JMenu();
+        JMIMisTickets = new javax.swing.JMenuItem();
+        JMNSTCerrarSesion = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        JLBBienvenido.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
+        JLBBienvenido.setText("¡Bienvenido!");
+
+        JLBSoporteTecnico.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
+        JLBSoporteTecnico.setText("Soporte Técnico");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+
+        JBNMisTickets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Mis Tickets.png"))); // NOI18N
+
+        JMBTecnico.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+
+        JMNTTickets.setText("Tickets");
+
+        JMIMisTickets.setText("Mis Tickets");
+        JMIMisTickets.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMIMisTicketsActionPerformed(evt);
+            }
+        });
+        JMNTTickets.add(JMIMisTickets);
+
+        JMBTecnico.add(JMNTTickets);
+
+        JMNSTCerrarSesion.setText("Cerrar Sesión");
+        JMBTecnico.add(JMNSTCerrarSesion);
+
+        setJMenuBar(JMBTecnico);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 126, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JLBBienvenido)
+                                .addGap(137, 137, 137))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JLBSoporteTecnico)
+                                .addGap(116, 116, 116))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(JBNMisTickets)
+                                .addGap(154, 154, 154))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(JLBBienvenido)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(JLBSoporteTecnico)
+                .addGap(18, 18, 18)
+                .addComponent(JBNMisTickets)
+                .addContainerGap(89, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JMIMisTicketsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMIMisTicketsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMIMisTicketsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +149,13 @@ public class Menu_Tecnico extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton JBNMisTickets;
+    private javax.swing.JLabel JLBBienvenido;
+    private javax.swing.JLabel JLBSoporteTecnico;
+    private javax.swing.JMenuBar JMBTecnico;
+    private javax.swing.JMenuItem JMIMisTickets;
+    private javax.swing.JMenu JMNSTCerrarSesion;
+    private javax.swing.JMenu JMNTTickets;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
