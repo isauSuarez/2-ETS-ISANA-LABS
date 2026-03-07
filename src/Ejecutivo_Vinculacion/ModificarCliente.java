@@ -15,6 +15,8 @@ public class ModificarCliente extends javax.swing.JFrame {
      */
     public ModificarCliente() {
         initComponents();
+        this.setSize(525, 600); // Fuerza el tamaño exacto
+        this.setLocationRelativeTo(null); // Centra la ventana en tu monitor
     }
 
     /**
@@ -42,6 +44,8 @@ public class ModificarCliente extends javax.swing.JFrame {
         JBNGuardarCliente1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(500, 600));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         JBNGuardarCliente.setBackground(new java.awt.Color(0, 165, 104));
         JBNGuardarCliente.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
@@ -52,8 +56,10 @@ public class ModificarCliente extends javax.swing.JFrame {
                 JBNGuardarClienteActionPerformed(evt);
             }
         });
+        getContentPane().add(JBNGuardarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 356, 102, 42));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 333, -1, -1));
 
         jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         jButton1.setText("Cancelar");
@@ -63,63 +69,84 @@ public class ModificarCliente extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 363, 69, 29));
 
         JLBApellido.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBApellido.setText("Apellido (s)");
+        getContentPane().add(JLBApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 183, -1, -1));
 
         JLBATelefono.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBATelefono.setText("Telefono");
+        getContentPane().add(JLBATelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 244, -1, -1));
 
         JLBCorreo.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBCorreo.setText("Correo");
+        getContentPane().add(JLBCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 289, -1, -1));
 
         JLBNombre.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JLBNombre.setText("Nombre (s)");
+        getContentPane().add(JLBNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 135, -1, -1));
 
         jTextField2.setForeground(new java.awt.Color(204, 204, 204));
         jTextField2.setText("                              Locación");
+        jTextField2.setMinimumSize(new java.awt.Dimension(350, 40));
+        jTextField2.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 180, -1, -1));
 
         jTextField3.setForeground(new java.awt.Color(204, 204, 204));
         jTextField3.setText("                             Teléfono");
+        jTextField3.setMinimumSize(new java.awt.Dimension(350, 40));
+        jTextField3.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 241, -1, -1));
 
         jTextField4.setForeground(new java.awt.Color(204, 204, 204));
         jTextField4.setText("                        Correo electrónico");
+        jTextField4.setMinimumSize(new java.awt.Dimension(350, 40));
+        jTextField4.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 286, -1, -1));
 
         jTextField5.setForeground(new java.awt.Color(204, 204, 204));
         jTextField5.setText("                               Nombre");
+        jTextField5.setMinimumSize(new java.awt.Dimension(350, 40));
+        jTextField5.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(133, 132, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 153, 153));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Modificar cliente");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 23, 240, -1));
 
         jTextField1.setForeground(new java.awt.Color(204, 204, 204));
         jTextField1.setText("                         Número de póliza");
+        jTextField1.setMinimumSize(new java.awt.Dimension(350, 40));
+        jTextField1.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(133, 89, -1, -1));
 
         JBNGuardarCliente1.setBackground(new java.awt.Color(0, 165, 104));
         JBNGuardarCliente1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
@@ -130,90 +157,7 @@ public class ModificarCliente extends javax.swing.JFrame {
                 JBNGuardarCliente1ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(JLBCorreo, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(JLBATelefono, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(JLBApellido, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(JLBNombre)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(JBNGuardarCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(53, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(JBNGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(73, 73, 73)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JBNGuardarCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JLBNombre))
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JLBApellido))
-                        .addGap(84, 84, 84)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JLBCorreo)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JLBATelefono))
-                        .addGap(53, 53, 53)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(JBNGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(64, 64, 64))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(55, 55, 55))))
-        );
+        getContentPane().add(JBNGuardarCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 86, 87, 28));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
