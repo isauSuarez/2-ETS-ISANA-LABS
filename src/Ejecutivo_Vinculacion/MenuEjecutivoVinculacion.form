@@ -21,7 +21,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Buscarcliente"/>
+                <Property name="text" type="java.lang.String" value="Buscar cliente"/>
               </Properties>
             </MenuItem>
           </SubComponents>

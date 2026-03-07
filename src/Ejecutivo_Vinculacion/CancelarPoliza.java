@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Polizas;
+package Ejecutivo_Vinculacion;
 
 /**
  *
- * @author glomy
+ * @author suare
  */
-public class Registrar_Poliza extends javax.swing.JFrame {
+public class CancelarPoliza extends javax.swing.JFrame {
 
     /**
-     * Creates new form Registrar_Poliza
+     * Creates new form CancelarPoliza
      */
-    public Registrar_Poliza() {
+    public CancelarPoliza() {
         initComponents();
     }
 
@@ -59,20 +59,20 @@ public class Registrar_Poliza extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Registrar_Poliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CancelarPoliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Registrar_Poliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CancelarPoliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Registrar_Poliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CancelarPoliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Registrar_Poliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CancelarPoliza.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Registrar_Poliza().setVisible(true);
+                new CancelarPoliza().setVisible(true);
             }
         });
     }

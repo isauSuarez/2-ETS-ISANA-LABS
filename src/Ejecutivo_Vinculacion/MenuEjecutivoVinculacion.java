@@ -61,7 +61,7 @@ public class MenuEjecutivoVinculacion extends javax.swing.JFrame {
         jMenuItem2.setText("Modificar cliente");
         jMenu1.add(jMenuItem2);
 
-        jMenuItem3.setText("Buscarcliente");
+        jMenuItem3.setText("Buscar cliente");
         jMenu1.add(jMenuItem3);
 
         jMenuBar1.add(jMenu1);

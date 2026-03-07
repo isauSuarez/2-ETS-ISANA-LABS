@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Polizas;
+package Ejecutivo_Vinculacion;
 
 /**
  *
@@ -37,7 +37,6 @@ public class Nuevo_Usuario extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(450, 450));
         setResizable(false);
 
         lblTituloNU.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
