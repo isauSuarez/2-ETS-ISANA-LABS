@@ -109,7 +109,8 @@ public class EditarPoliza extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 90, 40));
 
         jTextField2.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField2.setText("                              Locación");
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setText("Direccíon");
         jTextField2.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +120,8 @@ public class EditarPoliza extends javax.swing.JFrame {
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 340, -1));
 
         jTextField3.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField3.setText("                             Teléfono");
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setText("Teléfono");
         jTextField3.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +131,8 @@ public class EditarPoliza extends javax.swing.JFrame {
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 340, -1));
 
         jTextField4.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField4.setText("                        Correo electrónico");
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setText("Correo electrónico");
         jTextField4.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,7 +142,8 @@ public class EditarPoliza extends javax.swing.JFrame {
         getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 340, -1));
 
         jTextField5.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField5.setText("                               Nombre");
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setText("Nombre (s)");
         jTextField5.setMinimumSize(new java.awt.Dimension(66, 28));
         jTextField5.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField5.setVerifyInputWhenFocusTarget(false);

@@ -121,7 +121,7 @@ public class NuevoTecnico extends javax.swing.JFrame {
         JBNGuardar.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         JBNGuardar.setText("Guardar");
         JBNGuardar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        getContentPane().add(JBNGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 102, 42));
+        getContentPane().add(JBNGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, 102, 42));
 
         jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         jButton1.setText("Cancelar");

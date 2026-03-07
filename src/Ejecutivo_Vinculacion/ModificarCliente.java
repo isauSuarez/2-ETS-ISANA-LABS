@@ -48,7 +48,7 @@ public class ModificarCliente extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         JBNGuardarCliente.setBackground(new java.awt.Color(0, 165, 104));
-        JBNGuardarCliente.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNGuardarCliente.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         JBNGuardarCliente.setText("Guardar");
         JBNGuardarCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         JBNGuardarCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -56,12 +56,12 @@ public class ModificarCliente extends javax.swing.JFrame {
                 JBNGuardarClienteActionPerformed(evt);
             }
         });
-        getContentPane().add(JBNGuardarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 356, 102, 42));
+        getContentPane().add(JBNGuardarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 450, 224, 42));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Logo ETS 75 px.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 333, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jButton1.setText("Cancelar");
         jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -69,26 +69,31 @@ public class ModificarCliente extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 363, 69, 29));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 90, 30));
 
-        JLBApellido.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBApellido.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JLBApellido.setForeground(new java.awt.Color(102, 102, 102));
         JLBApellido.setText("Apellido (s)");
-        getContentPane().add(JLBApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 183, -1, -1));
+        getContentPane().add(JLBApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 80, 40));
 
-        JLBATelefono.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBATelefono.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JLBATelefono.setForeground(new java.awt.Color(102, 102, 102));
         JLBATelefono.setText("Telefono");
-        getContentPane().add(JLBATelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 244, -1, -1));
+        getContentPane().add(JLBATelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 80, 40));
 
-        JLBCorreo.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBCorreo.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JLBCorreo.setForeground(new java.awt.Color(102, 102, 102));
         JLBCorreo.setText("Correo");
-        getContentPane().add(JLBCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 289, -1, -1));
+        getContentPane().add(JLBCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 90, 40));
 
-        JLBNombre.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JLBNombre.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
+        JLBNombre.setForeground(new java.awt.Color(102, 102, 102));
         JLBNombre.setText("Nombre (s)");
-        getContentPane().add(JLBNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 135, -1, -1));
+        getContentPane().add(JLBNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 80, 40));
 
         jTextField2.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField2.setText("                              Locación");
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setText("Apellido (s)");
         jTextField2.setMinimumSize(new java.awt.Dimension(350, 40));
         jTextField2.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -96,10 +101,11 @@ public class ModificarCliente extends javax.swing.JFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 180, -1, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 340, -1));
 
         jTextField3.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField3.setText("                             Teléfono");
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setText("Telefono");
         jTextField3.setMinimumSize(new java.awt.Dimension(350, 40));
         jTextField3.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -107,10 +113,11 @@ public class ModificarCliente extends javax.swing.JFrame {
                 jTextField3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 241, -1, -1));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 340, -1));
 
         jTextField4.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField4.setText("                        Correo electrónico");
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setText("Correo electrónico");
         jTextField4.setMinimumSize(new java.awt.Dimension(350, 40));
         jTextField4.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -118,10 +125,12 @@ public class ModificarCliente extends javax.swing.JFrame {
                 jTextField4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 286, -1, -1));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 340, -1));
 
         jTextField5.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField5.setText("                               Nombre");
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setText("Nombre (s)");
+        jTextField5.setToolTipText("");
         jTextField5.setMinimumSize(new java.awt.Dimension(350, 40));
         jTextField5.setPreferredSize(new java.awt.Dimension(350, 40));
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
@@ -129,13 +138,13 @@ public class ModificarCliente extends javax.swing.JFrame {
                 jTextField5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(133, 132, -1, -1));
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 340, -1));
 
         jLabel2.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Modificar cliente");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 23, 240, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 240, -1));
 
         jTextField1.setForeground(new java.awt.Color(204, 204, 204));
         jTextField1.setText("                         Número de póliza");
@@ -146,10 +155,10 @@ public class ModificarCliente extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(133, 89, -1, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 280, -1));
 
         JBNGuardarCliente1.setBackground(new java.awt.Color(0, 165, 104));
-        JBNGuardarCliente1.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        JBNGuardarCliente1.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         JBNGuardarCliente1.setText("Buscar");
         JBNGuardarCliente1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         JBNGuardarCliente1.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +166,7 @@ public class ModificarCliente extends javax.swing.JFrame {
                 JBNGuardarCliente1ActionPerformed(evt);
             }
         });
-        getContentPane().add(JBNGuardarCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 86, 87, 28));
+        getContentPane().add(JBNGuardarCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 120, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
